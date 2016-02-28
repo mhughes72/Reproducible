@@ -2,6 +2,7 @@
 #This is all the code to complete Asignment #1.
 #As is the code won't run, varying chunks need to be commented out or
 #data and plots will overlap
+
 repo1 <- function() {
   #Load raw data
   data <- read.csv("activity.csv")

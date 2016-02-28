@@ -3,6 +3,7 @@
 
 ## Loading and preprocessing the data
 
+
 ```r
   data <- read.csv("activity.csv")
   meanStepsPerInterval = aggregate(steps ~ interval, data, sum) 
