@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Reproducible
+# Reproducible Research Assignment #1
 
 =======
 ## Introduction
