@@ -24,7 +24,9 @@
 
 
 ```r
-    with(meanStepsPerDay, plot(date, steps, main="Average daily activity pattern", type="l", pch=12))
+  with(meanStepsPerDay, plot(
+    date, steps, main = "Hello", type = "l", pch = 12
+  ))
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)
@@ -102,10 +104,10 @@
     subset(meanStepsPerDay3, data2$daytype == "weekend"), points(interval, steps, col =
                                                                    "blue", type = "l")
   )
-#   with(
-#     subset(meanStepsPerDay3, data2$daytype == "weekend"), points(interval,steps, col =
-#                                                                    "red", type = "l")
-#   )
+  with(
+    subset(meanStepsPerDay3, data2$daytype == "weekday"), points(interval,steps, col =
+                                                                   "red", type = "l")
+  )
   legend(
     "topright", pch = 1, col = c("blue", "red"), legend = c("Weekday", "Weekend")
   )
